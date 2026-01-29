@@ -49,7 +49,7 @@ export default function ConsultationFormForCo() {
 
         if (validateForm()) {
             const emailPayload = {
-                mailTo: "Support@icl.today",
+                mailTo: "codechef@icl.today",
                 name: formData.name,
                 email: formData.email,
                 college: formData.college,
@@ -127,27 +127,29 @@ export default function ConsultationFormForCo() {
                                     onChange={handleChange}
                                     className="cf-inp"
                                 />
+                                {errors.name && <p className="error-message">{errors.name}</p>}
 
                                 <input
                                     type="text"
                                     name="college"
-                                    placeholder="College Name"
+                                    placeholder="College Name*"
+                                    required
                                     value={formData.college}
                                     onChange={handleChange}
                                     className="cf-inp"
                                 />
+                                {errors.college && <p className="error-message">{errors.college}</p>}
 
-                                {errors.name && <p className="error-message">{errors.name}</p>}
                                 <input
                                     type="tel"
                                     name="phone"
-                                    placeholder="Phone Number"
+                                    placeholder="Phone Number*"
+                                    required
                                     value={formData.phone}
                                     onChange={handleChange}
                                     className="cf-inp"
                                 />
-
-
+                                {errors.phone && <p className="error-message">{errors.phone}</p>}
                             </div>
                         </div>
                         <div className="form-right">
@@ -161,20 +163,21 @@ export default function ConsultationFormForCo() {
                                     onChange={handleChange}
                                     className="cf-inp"
                                 />
+                                {errors.email && <p className="error-message">{errors.email}</p>}
 
                                 <input
                                     type="text"
                                     name="location"
-                                    placeholder="Location"
+                                    placeholder="Location*"
+                                    required
                                     value={formData.location}
                                     onChange={handleChange}
                                     className="cf-inp"
                                 />
+                                {errors.location && <p className="error-message">{errors.location}</p>}
 
-                                {errors.email && <p className="error-message">{errors.email}</p>}
                                 <input
                                     type="text"
-
                                     name="services"
                                     value={formData.services}
                                     placeholder="Services*"
@@ -182,8 +185,7 @@ export default function ConsultationFormForCo() {
                                     required
                                     className="cf-inp"
                                 />
-
-                                {errors.services && <p className="error-message-i">{errors.services}</p>}
+                                {errors.services && <p className="error-message">{errors.services}</p>}
                             </div>
                         </div>
                     </div>
