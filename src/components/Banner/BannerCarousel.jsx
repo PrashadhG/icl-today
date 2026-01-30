@@ -10,6 +10,9 @@ import CoeImage from "../../assets/Images/Banner/Coes.png";
 import CodeChefImage from "../../assets/Images/Banner/codchef.png";
 import TrainingImage from "../../assets/Images/Banner/coes1.png";
 
+import CodechefInquiryFormSerivies from "../ContactPage/CodechefInquiryFormSerivies";
+
+
 const slideVariants = {
   enter: (direction) => ({
     x: direction > 0 ? 80 : -80,
@@ -317,11 +320,15 @@ function BannerCarousel() {
         <span className="w-2 h-2 rounded-full bg-blue-300/40" />
       </div>
 
-      {showForm && (
-        <div className="fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-4">
-          <InquiryFormSerivies closeModal={() => setShowForm(false)} />
-        </div>
-      )}
+ {showForm && (
+  <div className="fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-4">
+    {location.pathname === "/codechef" ? (
+      <CodechefInquiryFormSerivies closeModal={() => setShowForm(false)} />
+    ) : (
+      <InquiryFormSerivies closeModal={() => setShowForm(false)} />
+    )}
+  </div>
+)}
     </section>
   );
 }

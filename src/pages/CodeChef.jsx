@@ -8,7 +8,7 @@ import { FaBook, FaPen, FaFlask, FaRocket } from 'react-icons/fa';
 import HowItWorks from '../components/c2cservices/HowItworks/HowItWorks';
 import KeyHighlights from '../components/c2cservices/KeyHighlights/KeyHighlights';
 import WhatIsCodeChef from '../components/c2cservices/WhatIs/WhatIs';
-import ConsultationFormForCo from '../pages/ConsultationFormForCo';
+import CodechefConsultationFormForCo from '../components/ContactPage/codechefConsultationFormForCo';
 import noprofile from "../assets/noprofile.png";
 import BannerCarousel from '../components/Banner/BannerCarousel';
 
@@ -127,7 +127,7 @@ const CodeChef = () => {
             ]}
           />
 
-          <ConsultationFormForCo />
+          <CodechefConsultationFormForCo />
     </div>
   );
 };
