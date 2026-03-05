@@ -5,23 +5,23 @@ import { Trophy } from "lucide-react";
 
 const CourseCard = ({ course }) => {
   const navigate = useNavigate();
-  
+
   const formatPrice = (price) => {
     return `₹${price}`;
   };
-  
+
   const handleEnterCourse = () => {
     navigate(`/courses/${course._id}`);
   };
 
   return (
     <div className="course-card card">
-      
+
       <img src={course.image} alt={course.title} className="course-image" />
-      
+
       <div className="course-content">
         <h3 className="course-title">{course.title}</h3>
-        
+
         <p className="course-instructor">
           <i className="fas fa-user"></i> {course.instructor}
         </p>
@@ -30,7 +30,7 @@ const CourseCard = ({ course }) => {
           dangerouslySetInnerHTML={{
             __html:
               (course.description.length > 100)
-                ? `${course.description.substring(0, 100)}...`
+                ? `${course.description.substring(0, 90)}...`
                 : course.description,
           }}
         ></p>
@@ -54,11 +54,11 @@ const CourseCard = ({ course }) => {
             <i className="fas fa-signal"></i> {course.level}
           </span>
 
-            <span className="flex items-center gap-1.5 rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-700 border border-indigo-100">
-    <Trophy className="h-3.5 w-3.5 text-indigo-600" />
-    Hackathon
-  </span>
-          
+          <span className="flex items-center gap-1.5 rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-700 border border-indigo-100">
+            <Trophy className="h-3.5 w-3.5 text-indigo-600" />
+            InternShip Learning
+          </span>
+
         </div>
         <button
           className="btn btn-primary enter-course-btn"
