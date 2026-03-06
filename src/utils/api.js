@@ -25,390 +25,163 @@ api.interceptors.request.use(
 
 // Infoziant Mock Course APIs
 const MockCourses = [
-  {
-    "_id": "693570fe74010598c3968435",
-    "title": "Generative AI Engineering",
-    "subtitle": "Build Intelligent AI Applications",
-    "description": "Learn how to design and build real-world Generative AI applications using Large Language Models, prompt engineering, vector databases, and RAG architectures. This course covers the entire pipeline from AI fundamentals to deploying AI-powered products.",
-    "price": 2500,
-    "image": "https://assets.aboutamazon.com/dims4/default/aad143f/2147483647/strip/true/crop/4093x2304+7+0/resize/2480x1396!/format/webp/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F36%2F59%2Feba4adcc4f88a972b5639ed1dde0%2Fadobestock-712831308.jpeg",
-    "instructor": "AI Engineering Experts",
-    "duration": "45 Days (1.5 Hours/Day)",
-    "level": "Advanced",
+{
+  "_id": "693570fe74010598c3968435",
+  "title": "Generative AI Engineering",
+  "subtitle": "Build Intelligent AI Applications",
+ "description": "This program provides a comprehensive introduction to Generative AI and modern AI engineering practices. You will learn how Large Language Models (LLMs) work, how to design effective prompts, and how to build intelligent applications using AI APIs. The course covers embeddings, vector databases, and Retrieval-Augmented Generation (RAG) architectures used in modern AI systems. By the end of the program, you will build real-world AI-powered applications such as chatbots, semantic search systems, and intelligent assistants. The course also focuses on deploying AI solutions and understanding best practices for building scalable and production-ready AI systems.",
+  "price": 2500,
+  "image": "https://assets.aboutamazon.com/dims4/default/aad143f/2147483647/strip/true/crop/4093x2304+7+0/resize/2480x1396!/format/webp/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F36%2F59%2Feba4adcc4f88a972b5639ed1dde0%2Fadobestock-712831308.jpeg",
+  "instructor": "AI Engineering Experts",
+  "duration": "15 Days (1 Hour/Day)",
+  "level": "Beginner to Advanced",
 
-    "topics": [
-      "Introduction to Artificial Intelligence",
-      "Understanding Generative AI Concepts",
-      "Large Language Models (LLMs)",
-      "Prompt Engineering Techniques",
-      "AI APIs and Model Integration",
-      "Embeddings and Vector Databases",
-      "Retrieval-Augmented Generation (RAG)",
-      "Building AI-Powered Applications",
-      "AI Application Deployment",
-      "Best Practices for AI Systems"
-    ],
+  "topics": [
+    "Foundations of Artificial Intelligence",
+    "Generative AI Concepts",
+    "Large Language Models (LLMs)",
+    "Prompt Engineering Techniques",
+    "AI APIs and Model Integration",
+    "Embeddings and Vector Databases",
+    "Retrieval-Augmented Generation (RAG)",
+    "Building AI Applications"
+  ],
 
-    "benefits": [
-      "Hands-On Generative AI Development",
-      "Expert-Led AI Engineering Sessions",
-      "Build Production-Level AI Applications",
-      "Live Mentor Support",
-      "Career Opportunities: AI Engineer, GenAI Developer, LLM Engineer",
-      "Career Opportunities: Machine Learning Engineer, AI Product Developer"
-    ],
+  "benefits": [
+    "Hands-On Generative AI Development",
+    "Expert-Led AI Engineering Sessions",
+    "Build Production-Level AI Applications",
+    "Live Mentor Support",
+    "Career Opportunities: AI Engineer, GenAI Developer, LLM Engineer"
+  ],
 
-    "curriculum": [
-      {
-        "title": "Introduction to Artificial Intelligence",
-        "lessons": [
-          { "title": "Overview of AI and Machine Learning", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Introduction to Generative AI",
-        "lessons": [
-          { "title": "What is Generative AI and How it Works", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Applications of Generative AI",
-        "lessons": [
-          { "title": "Real-world Use Cases of Generative AI", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Understanding Large Language Models",
-        "lessons": [
-          { "title": "How LLMs Work", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Tokens and Transformers",
-        "lessons": [
-          { "title": "Tokenization and Transformer Architecture", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Prompt Engineering Basics",
-        "lessons": [
-          { "title": "Introduction to Prompt Engineering", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Advanced Prompting",
-        "lessons": [
-          { "title": "Zero-shot and Few-shot Prompt Techniques", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "AI API Integration",
-        "lessons": [
-          { "title": "Using AI APIs in Applications", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Building AI Chat Applications",
-        "lessons": [
-          { "title": "Creating a Basic AI Chatbot", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Embeddings Explained",
-        "lessons": [
-          { "title": "Understanding Text Embeddings", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Vector Databases",
-        "lessons": [
-          { "title": "Working with FAISS and Pinecone", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Semantic Search",
-        "lessons": [
-          { "title": "Building Semantic Search with Embeddings", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Retrieval-Augmented Generation",
-        "lessons": [
-          { "title": "Introduction to RAG Systems", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Building a RAG Application",
-        "lessons": [
-          { "title": "Combining LLMs with Knowledge Bases", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "AI Project and Deployment",
-        "lessons": [
-          { "title": "Building and Deploying an AI Application", "duration": "1 hour" }
-        ]
-      }
-    ],
+  "curriculum": [
+    { "title": "Introduction to Artificial Intelligence", "lessons": [{ "title": "Overview of AI and Machine Learning", "duration": "1 hour" }] },
+    { "title": "Generative AI Overview", "lessons": [{ "title": "Understanding Generative AI Systems", "duration": "1 hour" }] },
+    { "title": "Applications of Generative AI", "lessons": [{ "title": "Real-world AI Applications", "duration": "1 hour" }] },
+    { "title": "Large Language Models", "lessons": [{ "title": "How LLMs Work", "duration": "1 hour" }] },
+    { "title": "Transformers and Tokens", "lessons": [{ "title": "Transformer Architecture Basics", "duration": "1 hour" }] },
+    { "title": "Prompt Engineering", "lessons": [{ "title": "Designing Effective Prompts", "duration": "1 hour" }] },
+    { "title": "Advanced Prompting", "lessons": [{ "title": "Few-shot and Chain-of-Thought Prompting", "duration": "1 hour" }] },
+    { "title": "AI API Integration", "lessons": [{ "title": "Using AI APIs in Applications", "duration": "1 hour" }] },
+    { "title": "AI Chat Applications", "lessons": [{ "title": "Building AI Chatbots", "duration": "1 hour" }] },
+    { "title": "Embeddings", "lessons": [{ "title": "Understanding Vector Embeddings", "duration": "1 hour" }] },
+    { "title": "Vector Databases", "lessons": [{ "title": "Using FAISS and Pinecone", "duration": "1 hour" }] },
+    { "title": "Semantic Search", "lessons": [{ "title": "Building Semantic Search", "duration": "1 hour" }] },
+    { "title": "RAG Systems", "lessons": [{ "title": "Introduction to RAG Architecture", "duration": "1 hour" }] },
+    { "title": "Building RAG Applications", "lessons": [{ "title": "Combining LLMs with Knowledge Bases", "duration": "1 hour" }] },
+    { "title": "AI Deployment", "lessons": [{ "title": "Deploying AI Applications", "duration": "1 hour" }] }
+  ],
 
-    "rating": 4.9,
-    "enrollmentCount": 2643,
-    "featured": true
-  },
+  "rating": 4.9,
+  "enrollmentCount": 2643,
+  "featured": true
+},
+{
+  "_id": "693570fe74010598c3968470",
+  "title": "Mern Stack Development",
+  "subtitle": "Build Modern Web Applications",
+  "description": "This course teaches you how to build modern full stack web applications using the MERN stack — MongoDB, Express.js, React.js, and Node.js. You will learn how to design responsive user interfaces, build RESTful APIs, manage databases, and connect frontend and backend systems. The program focuses on practical development where you will create real-world applications such as dashboards, authentication systems, and dynamic web platforms. By the end of the course, you will understand the complete development lifecycle from frontend development to backend services and deployment of full stack applications.",
+  "price": 2500,
+  "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F88lvz3rpqrqp1714t914.png",
+  "instructor": "Full Stack Engineering Experts",
+  "duration": "15 Days (1 Hour/Day)",
+  "level": "Beginner to Advanced",
 
-  {
-    "_id": "693570fe74010598c3968470",
-    "title": "Mern Stack Development",
-    "subtitle": "Build Modern Web Applications",
-    "description": "Learn to build complete web applications using the MERN stack. This course covers frontend development, backend APIs, database design, and deployment, enabling you to build and launch real-world full stack applications.",
-    "price": 2500,
-    "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F88lvz3rpqrqp1714t914.png",
-    "instructor": "Full Stack Engineering Experts",
-    "duration": "15 Hours (1 Hour/Day)",
-    "level": "Beginner",
+  "topics": [
+    "Full Stack Web Development Architecture",
+    "Modern JavaScript (ES6+)",
+    "React.js Component Development",
+    "React Hooks and State Management",
+    "Backend APIs with Node.js & Express",
+    "MongoDB Database Design",
+    "Frontend + Backend API Integration",
+    "Deploying MERN Applications"
+  ],
 
-    "topics": [
-      "Introduction to Web Development",
-      "HTML Fundamentals",
-      "CSS and Responsive Design",
-      "Modern JavaScript (ES6+)",
-      "Version Control with Git",
-      "GitHub Collaboration",
-      "React.js Fundamentals",
-      "React Hooks and Component Architecture",
-      "Backend Development with Node.js",
-      "Building APIs with Express.js",
-      "MongoDB Database Design",
-      "CRUD Operations with MongoDB",
-      "REST API Development",
-      "Frontend and Backend Integration",
-      "Application Deployment"
-    ],
+  "benefits": [
+    "Hands-On Full Stack Development",
+    "Learn Industry-Standard MERN Stack",
+    "Build Real-World Applications",
+    "Live Mentor Support",
+    "Career Opportunities: Full Stack Developer, MERN Developer"
+  ],
 
-    "benefits": [
-      "Hands-On Full Stack Development",
-      "Learn Industry-Standard MERN Stack",
-      "Build Real-World Web Applications",
-      "Live Mentor Support",
-      "Career Opportunities: Full Stack Developer, MERN Stack Developer",
-      "Career Opportunities: Frontend Developer, Backend Developer, Web Engineer"
-    ],
+  "curriculum": [
+    { "title": "Web Development Overview", "lessons": [{ "title": "Introduction to Web Development", "duration": "1 hour" }] },
+    { "title": "HTML Fundamentals", "lessons": [{ "title": "HTML Structure and Elements", "duration": "1 hour" }] },
+    { "title": "CSS Fundamentals", "lessons": [{ "title": "Flexbox and Responsive Design", "duration": "1 hour" }] },
+    { "title": "JavaScript Basics", "lessons": [{ "title": "Core JavaScript Concepts", "duration": "1 hour" }] },
+    { "title": "Advanced JavaScript", "lessons": [{ "title": "ES6+ Features", "duration": "1 hour" }] },
+    { "title": "Git and Version Control", "lessons": [{ "title": "Git Fundamentals", "duration": "1 hour" }] },
+    { "title": "React Basics", "lessons": [{ "title": "React Components and JSX", "duration": "1 hour" }] },
+    { "title": "React Hooks", "lessons": [{ "title": "State and Effect Hooks", "duration": "1 hour" }] },
+    { "title": "Node.js Fundamentals", "lessons": [{ "title": "Backend Development with Node.js", "duration": "1 hour" }] },
+    { "title": "Express APIs", "lessons": [{ "title": "Building REST APIs", "duration": "1 hour" }] },
+    { "title": "MongoDB Basics", "lessons": [{ "title": "Database Design Concepts", "duration": "1 hour" }] },
+    { "title": "CRUD Operations", "lessons": [{ "title": "Working with MongoDB Data", "duration": "1 hour" }] },
+    { "title": "API Integration", "lessons": [{ "title": "Connecting React with Backend APIs", "duration": "1 hour" }] },
+    { "title": "Authentication", "lessons": [{ "title": "User Authentication with JWT", "duration": "1 hour" }] },
+    { "title": "Deployment", "lessons": [{ "title": "Deploying MERN Applications", "duration": "1 hour" }] }
+  ],
 
-    "curriculum": [
-      {
-        "title": "Introduction to Web Development",
-        "lessons": [
-          { "title": "Overview of Web Development and Internet Fundamentals", "duration": "1 hour" },
-          { "title": "Frontend vs Backend vs Full Stack Development", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "HTML Fundamentals",
-        "lessons": [
-          { "title": "HTML Structure, Elements, and Semantic Tags", "duration": "1 hour" },
-          { "title": "Forms, Inputs, and Best Practices in HTML", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "CSS & Responsive Design",
-        "lessons": [
-          { "title": "CSS Basics, Layout Systems, and Flexbox", "duration": "1 hour" },
-          { "title": "Responsive Design with Media Queries", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Modern JavaScript",
-        "lessons": [
-          { "title": "JavaScript Fundamentals and ES6 Features", "duration": "1 hour" },
-          { "title": "DOM Manipulation and Event Handling", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Version Control with Git",
-        "lessons": [
-          { "title": "Git Basics, Repositories, and Version Tracking", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "GitHub Collaboration",
-        "lessons": [
-          { "title": "Working with GitHub, Branching, and Pull Requests", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "React.js Fundamentals",
-        "lessons": [
-          { "title": "Introduction to React and Component-Based Architecture", "duration": "1 hour" },
-          { "title": "JSX, Props, and State Management", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Advanced React Development",
-        "lessons": [
-          { "title": "React Hooks and Component Lifecycle", "duration": "1 hour" },
-          { "title": "Building Interactive UI with React", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Backend Development with Node.js",
-        "lessons": [
-          { "title": "Introduction to Node.js and Server Fundamentals", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Express.js Framework",
-        "lessons": [
-          { "title": "Building APIs using Express.js", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Database Design with MongoDB",
-        "lessons": [
-          { "title": "Introduction to MongoDB and NoSQL Databases", "duration": "1 hour" },
-          { "title": "CRUD Operations with MongoDB", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "REST API Development",
-        "lessons": [
-          { "title": "Designing RESTful APIs with Node.js and Express", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "API Integration",
-        "lessons": [
-          { "title": "Connecting React Frontend with Backend APIs", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Application Deployment",
-        "lessons": [
-          { "title": "Deploying Full Stack Applications to Production", "duration": "1 hour" }
-        ]
-      }
-    ],
+  "rating": 4.8,
+  "enrollmentCount": 2180,
+  "featured": true
+},
 
-    "rating": 4.8,
-    "enrollmentCount": 2180,
-    "featured": true
-  },
+{
+  "_id": "693570fe74010598c3968499",
+  "title": "Cybersecurity & Bug Bounty",
+  "subtitle": "Learn to Identify and Report Security Vulnerabilities",
+  "description": "This course introduces the core concepts of cybersecurity, ethical hacking, and vulnerability discovery. You will learn how web applications work, how attackers exploit common vulnerabilities, and how security professionals identify and report these issues responsibly. The program covers web architecture, security testing environments, OWASP Top 10 vulnerabilities, and real-world security testing techniques. You will also learn how vulnerability disclosure programs and bug bounty platforms operate, how to write professional security reports, and how ethical hackers contribute to improving the security of digital systems.",
+  "price": 2500,
+  "image": "https://www.archtis.com/wp-content/uploads/2021/07/NC_Protect-Dropbox_Nutanix_FileShares-Header.jpg",
+  "instructor": "Cybersecurity Experts",
+  "duration": "15 Days (1 Hour/Day)",
+  "level": "Beginner to Advanced",
 
-  {
-    "_id": "693570fe74010598c3968499",
-    "title": "Cybersecurity & Ethical Hacking Fundamentals",
-    "subtitle": "Learn to Identify and Report Security Vulnerabilities",
-    "description": "Learn the fundamentals of cybersecurity and ethical hacking with a focus on web application security. This course covers internet architecture, common vulnerabilities, security testing environments, and responsible vulnerability disclosure practices used by professional security researchers.",
-    "price": 2500,
-    "image": "https://www.archtis.com/wp-content/uploads/2021/07/NC_Protect-Dropbox_Nutanix_FileShares-Header.jpg",
-    "instructor": "Cybersecurity Experts",
-    "duration": "15 Hours (1 Hour/Day)",
-    "level": "Beginner to Intermediate",
+  "topics": [
+    "Cybersecurity Fundamentals",
+    "Internet and Web Architecture",
+    "Ethical Hacking Principles",
+    "Web Application Security",
+    "Security Testing Environment Setup",
+    "OWASP Top 10 Vulnerabilities",
+    "Vulnerability Discovery Techniques",
+    "Bug Bounty Programs and Platforms"
+  ],
 
-    "topics": [
-      "Introduction to Cybersecurity",
-      "Internet and Web Fundamentals",
-      "Introduction to Ethical Hacking",
-      "Web Application Architecture",
-      "Security Testing Environment Setup",
-      "Web Application Vulnerabilities",
-      "Common Security Threats",
-      "Vulnerability Discovery Process",
-      "Vulnerability Disclosure Programs (VDP)",
-      "Bug Bounty Platforms",
-      "Security Testing Methodologies",
-      "Writing Professional Security Reports",
-      "Responsible Disclosure",
-      "Submitting Vulnerabilities",
-      "Building a Career in Cybersecurity"
-    ],
+  "benefits": [
+    "Hands-On Cybersecurity Training",
+    "Learn Ethical Hacking Techniques",
+    "Real-World Vulnerability Discovery",
+    "Live Mentor Support",
+    "Career Opportunities: Security Analyst, Ethical Hacker, Bug Bounty Hunter"
+  ],
 
-    "benefits": [
-      "Hands-On Cybersecurity Training",
-      "Understand Ethical Hacking Methodologies",
-      "Learn Real-World Vulnerability Discovery",
-      "Live Mentor Support",
-      "Career Opportunities: Security Analyst, Ethical Hacker, Bug Bounty Hunter",
-      "Career Opportunities: Cybersecurity Researcher, Security Tester"
-    ],
+  "curriculum": [
+    { "title": "Cybersecurity Overview", "lessons": [{ "title": "Introduction to Cybersecurity", "duration": "1 hour" }] },
+    { "title": "Internet Fundamentals", "lessons": [{ "title": "DNS, HTTP, HTTPS Basics", "duration": "1 hour" }] },
+    { "title": "Ethical Hacking Basics", "lessons": [{ "title": "Responsible Security Testing", "duration": "1 hour" }] },
+    { "title": "Web Architecture", "lessons": [{ "title": "Frontend and Backend Systems", "duration": "1 hour" }] },
+    { "title": "Security Lab Setup", "lessons": [{ "title": "Building a Security Testing Environment", "duration": "1 hour" }] },
+    { "title": "Web Vulnerabilities", "lessons": [{ "title": "Understanding OWASP Top 10", "duration": "1 hour" }] },
+    { "title": "Vulnerability Discovery", "lessons": [{ "title": "Finding Security Issues", "duration": "1 hour" }] },
+    { "title": "Bug Bounty Programs", "lessons": [{ "title": "How Bug Bounty Platforms Work", "duration": "1 hour" }] },
+    { "title": "Security Tools", "lessons": [{ "title": "Introduction to Security Testing Tools", "duration": "1 hour" }] },
+    { "title": "Manual Testing", "lessons": [{ "title": "Manual Security Testing Techniques", "duration": "1 hour" }] },
+    { "title": "Writing Security Reports", "lessons": [{ "title": "Professional Vulnerability Reporting", "duration": "1 hour" }] },
+    { "title": "Responsible Disclosure", "lessons": [{ "title": "Disclosure Policies", "duration": "1 hour" }] },
+    { "title": "Submitting Vulnerabilities", "lessons": [{ "title": "Submitting Reports to Organizations", "duration": "1 hour" }] },
+    { "title": "Hall of Fame", "lessons": [{ "title": "Bug Bounty Recognition", "duration": "1 hour" }] },
+    { "title": "Cybersecurity Career", "lessons": [{ "title": "Building a Career in Cybersecurity", "duration": "1 hour" }] }
+  ],
 
-    "curriculum": [
-      {
-        "title": "Introduction to Cybersecurity",
-        "lessons": [
-          { "title": "Overview of Cybersecurity and Digital Threat Landscape", "duration": "1 hour" },
-          { "title": "Importance of Cybersecurity in Modern Systems", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Internet and Web Fundamentals",
-        "lessons": [
-          { "title": "How the Internet Works: DNS, HTTP, and HTTPS", "duration": "1 hour" },
-          { "title": "Client-Server Architecture and Web Communication", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Introduction to Ethical Hacking",
-        "lessons": [
-          { "title": "What is Ethical Hacking and Responsible Security Testing", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Web Application Architecture",
-        "lessons": [
-          { "title": "Understanding Frontend, Backend, and Databases in Web Applications", "duration": "1 hour" },
-          { "title": "How Web Applications Handle Authentication and Sessions", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Security Testing Environment",
-        "lessons": [
-          { "title": "Setting up a Security Testing Lab", "duration": "1 hour" },
-          { "title": "Introduction to Security Testing Tools", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Web Application Vulnerabilities",
-        "lessons": [
-          { "title": "Introduction to Common Web Vulnerabilities", "duration": "1 hour" },
-          { "title": "Understanding OWASP Top 10 Security Risks", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Vulnerability Discovery",
-        "lessons": [
-          { "title": "Techniques for Identifying Security Vulnerabilities", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Vulnerability Disclosure Programs",
-        "lessons": [
-          { "title": "Understanding Vulnerability Disclosure Programs (VDP)", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Professional Security Reporting",
-        "lessons": [
-          { "title": "Writing Professional Vulnerability Reports", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Vulnerability Submission",
-        "lessons": [
-          { "title": "Submitting Vulnerabilities to Organizations", "duration": "1 hour" }
-        ]
-      },
-      {
-        "title": "Bug Bounty Recognition",
-        "lessons": [
-          { "title": "Hall of Fame Recognition and Bug Bounty Platforms", "duration": "1 hour" }
-        ]
-      }
-    ],
-
-    "rating": 4.8,
-    "enrollmentCount": 1980,
-    "featured": true
-  },
+  "rating": 4.8,
+  "enrollmentCount": 1980,
+  "featured": true
+}
 ];
 
 export const getAllMockCourses = async () => {
